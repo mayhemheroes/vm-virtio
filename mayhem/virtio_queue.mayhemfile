@@ -1,0 +1,6 @@
+image: tngo04/vm-virtio:latest
+project: tngo04/vm-virtio
+target: virtio_queue
+
+cmds:
+  - cmd: /virtio_queue

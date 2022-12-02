@@ -1,0 +1,5 @@
+image: tngo04/vm-virtio:latest
+project: tngo04/vsock
+target: vsock
+cmds:
+  - cmd: /vsock
