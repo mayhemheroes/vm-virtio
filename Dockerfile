@@ -9,7 +9,7 @@ WORKDIR /vm-virtio/fuzz
 RUN cargo fuzz build 
 
 # Package Stage
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 COPY --from=builder /vm-virtio/fuzz/target/x86_64-unknown-linux-gnu/release/virtio_queue /
 COPY --from=builder /vm-virtio/fuzz/target/x86_64-unknown-linux-gnu/release/vsock /
